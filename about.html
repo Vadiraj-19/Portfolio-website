@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/src/components/logo.jpg" type="image/png">
+    <title>Vadiraj</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-black relative overflow-y-scroll h-screen ">
+    <header class="fixed top-0 w-full flex justify-between items-center bg-black p-3 shadow-lg neon-purple z-30">
+        <!-- Logo Section -->
+        <div class="w-24 bg-black">
+            <img src="/src/components/logo.jpg" class="w-32 h-24 animate-spiny" alt="Logo">
+        </div>
+    
+        <!-- Dropdown Menu Section -->
+        <div class="relative md:hidden group z-50">
+            <!-- Button to trigger dropdown -->
+            <button class="bg-black text-white w-28 h-10 flex justify-center items-center hover:scale-150">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+    
+            <!-- Dropdown menu (visible on hover for mobile) -->
+            <ul
+                class="absolute hidden group-hover:flex flex-col bg-slate-900 w-32 text-center text-white transition-all duration-300 ease-in-out z-20">
+                <li class="py-2 hover:bg-slate-700"><a href="index.html">HOME</a></li>
+                <li class="py-2 hover:bg-slate-700"><a href="about.html">ABOUT</a></li>
+                <li class="py-2 hover:bg-slate-700"><a href="portfolio.html">PORTFOLIO</a></li>
+                <li class="py-2 hover:bg-slate-700"><a href="contract.html">CONTACT US</a></li>
+                <li class="py-2 hover:bg-slate-700 flex justify-between items-center px-2">
+                    <i class=" fa-regular fa-sun"></i>
+                    <label
+                        class="cursor-default flex-shrink-0 group h-5 inline-flex items-center justify-center relative w-10">
+                        <input type="checkbox"
+                            class="peer absolute border-none h-5 rounded w-10 checked:border-0 checked:bg-white checked:focus:bg-transparent checked:hover:bg-transparent focus:outline-none  "
+                            name="foo" value="bar">
+                        <span
+                            class="peer-checked:bg-black absolute bg-gray-200 duration-200 ease-in-out h-5 mx-auto pointer-events-none rounded-full transition-colors w-9"></span>
+                        <span
+                            class="peer-checked:translate-x-5 absolute peer-checked:bg-gray-950 bg-white border border-gray-200 duration-200 ease-in-out h-5 inline-block left-0 pointer-events-none ring-0 rounded-full shadow transform transition-transform translate-x-0 w-5 "></span>
+                    </label>
+                    <i class=" fa-regular fa-moon"></i>
+                </li>
+            </ul>
+        </div>
+    
+        <!-- Desktop Menu (Visible on larger screens) -->
+        <nav class="hidden md:inline-flex z-50  justify-evenly w-50% text-white">
+            <a href="index.html" class="hover:text-purple-500 transition-transform hover:duration-500  hover:scale-105 px-4 hover:neon-purple  flex justify-center items-center">HOME</a>
+            <a href="about.html" class="hover:text-purple-500 transition-transform hover:duration-500  hover:scale-105 px-4 hover:neon-purple  flex justify-center items-center">ABOUT</a>
+            <a href="portfolio.html" class="hover:text-purple-500 transition-transform hover:duration-500  hover:scale-105 px-4 hover:neon-purple  flex justify-center items-center">PORTFOLIO</a>
+            <a href="contract.html" class="hover:text-purple-500 transition-transform hover:duration-500  hover:scale-105 px-4 hover:neon-purple  flex justify-center items-center">CONTACT US</a>
+            <div class="flex ">
+                <div class="py-2 hover:bg-slate-700">
+                    <i class=" fa-regular fa-sun"></i>
+                    <label
+                        class="cursor-default flex-shrink-0 group h-5 inline-flex items-center justify-center relative w-10">
+                        <input type="checkbox"
+                            class="peer absolute border-none h-5 rounded w-10 checked:border-0 checked:bg-white checked:focus:bg-transparent checked:hover:bg-transparent focus:outline-none  "
+                            name="foo" value="bar">
+                        <span
+                            class="peer-checked:bg-black absolute bg-gray-200 duration-200 ease-in-out h-5 mx-auto pointer-events-none rounded-full transition-colors w-9"></span>
+                        <span
+                            class="peer-checked:translate-x-5 absolute peer-checked:bg-gray-950 bg-white border border-gray-200 duration-200 ease-in-out h-5 inline-block left-0 pointer-events-none ring-0 rounded-full shadow transform transition-transform translate-x-0 w-5 "></span>
+                    </label>
+                    <i class=" fa-regular fa-moon"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <main class="mt-32 w-full h-full text-white -z-10">
+        
+        <article class="   flex flex-col  sm:justify-start h-full ">
+            <section class="flex justify-center">
+                <section class="w-40 h-12 border-2 rounded-lg  neon-stone font-BodoniModaSC flex sm:text-2xl justify-center animate-fadeIn items-center z-20 "> About</section>
+            </section>
+            <article class="text-sm font-jetmono mt-5 sm:mt-10 sm:text-xl flex flex-col items-center animate-fadeIn p-2  ">
+                <article>Hello! I’m Vadiraj Betageri, an aspiring full-stack developer with a passion for coding and technology. Currently, I am in the final year of my Bachelor of Engineering, specializing in Electronics and Communication. My journey in tech has equipped me with a diverse skill set, including proficiency in HTML, Tailwind CSS, CSS, C++, and Figma.</article>
+
+                <article>Throughout my academic career, I have actively engaged in various projects that have honed my development skills and creativity. I am currently enrolled in Internshala's placement guarantee full-stack course, where I am continuously expanding my knowledge and expertise in web development.</article> 
+                
+                <article>I thrive on challenges and am enthusiastic about transforming ideas into functional, user-friendly applications. I am excited to connect with like-minded individuals and contribute to innovative projects in the tech industry.</article>
+                
+                
+
+            </article>
+        </article>
+
+
+    </main>
+    <footer class="text-white neon-purple bg-black fixed bottom-0 h-10 w-full">
+        <article class="flex justify-center items-center w-full">
+            <i class="fa-regular fa-copyright"></i>
+            <p class="font-jetmono"> Copywrites Reserved </p>
+
+        </article>
+    </footer>
+</body>
+
+</html>
